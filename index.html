@@ -181,6 +181,18 @@ border: 1px solid #FE952B;
     
          </div>
     </div>
-     <script src="script.js"></script>
+      <script>
+    let input1=document.getElementById("input1")
+let input2=document.getElementById("input2")
+let submit=document.getElementById("submit")
+
+function save(){
+
+localStorage.setItem(input1.value,input2.value)
+
+}
+submit.addEventListener("click",save)
+
+   </script>
 </body>
 </html>
